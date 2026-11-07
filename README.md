@@ -13,7 +13,7 @@ Build and compare five supervised classification algorithms for predicting wheth
 - The dataset contains computed cell-nucleus measurements from digitized fine-needle aspirate images. It is used here only as an academic classification dataset, not for medical diagnosis.
 
 ## c. GitHub Repository Link
-Add your repository URL here after creating and pushing your own GitHub repository: **[lalit934/BITS-AIML-ML-Assignment-2]**.
+ **[lalit934/BITS-AIML-ML-Assignment-2]**.
 
 ## d. Models used and evaluation
 The five models are Logistic Regression, Decision Tree, K-Nearest Neighbors, Gaussian Naive Bayes, and Support Vector Machine. Accuracy, ROC AUC, precision, recall, F1 and Matthews Correlation Coefficient (MCC) are computed on the same held-out test set. Run `python train.py` to generate `training_metrics.csv`; copy its results into the table below for your final report.
