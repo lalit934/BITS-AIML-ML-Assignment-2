@@ -13,7 +13,7 @@ Build and compare five supervised classification algorithms for predicting wheth
 - The dataset contains computed cell-nucleus measurements from digitized fine-needle aspirate images. It is used here only as an academic classification dataset, not for medical diagnosis.
 
 ## c. GitHub Repository Link
-Add your repository URL here after creating and pushing your own GitHub repository: **[PASTE YOUR GITHUB REPOSITORY URL]**.
+Add your repository URL here after creating and pushing your own GitHub repository: **[lalit934/BITS-AIML-ML-Assignment-2]**.
 
 ## d. Models used and evaluation
 The five models are Logistic Regression, Decision Tree, K-Nearest Neighbors, Gaussian Naive Bayes, and Support Vector Machine. Accuracy, ROC AUC, precision, recall, F1 and Matthews Correlation Coefficient (MCC) are computed on the same held-out test set. Run `python train.py` to generate `training_metrics.csv`; copy its results into the table below for your final report.
@@ -26,8 +26,6 @@ The five models are Logistic Regression, Decision Tree, K-Nearest Neighbors, Gau
 | Naive Bayes | 0.9298 | 0.9868 | 0.9444 | 0.9444 | 0.9444 | 0.8492 |
 | Support Vector Machine | 0.9825 | 0.9950 | 0.9861 | 0.9861 | 0.9861 | 0.9623 |
 
-### Observations on model performance
-The following observations are based on the fixed 80/20 stratified split (`random_state=42`) produced by `train.py`. Results can vary if you change the split or model settings.
 
 | ML Model Name | Observation about model performance |
 |---|---|
@@ -46,26 +44,3 @@ The following observations are based on the fixed 80/20 stratified split (`rando
 - `training_metrics.csv` — measured training/test-split metrics.
 - `dataset_metadata.json` — feature and dataset metadata used by the app.
 
-## Run locally or on BITS Virtual Lab
-1. Create and activate a Python virtual environment (optional but recommended).
-2. Install dependencies: `pip install -r requirements.txt`.
-3. Train and save the models: `python train.py`.
-4. Start the app: `streamlit run app.py`.
-5. Open the local URL printed by Streamlit (usually `http://localhost:8501`).
-6. Upload `test_data.csv` or another CSV with all 30 feature columns and the `diagnosis` column.
-
-## Deploy on Streamlit Community Cloud
-1. Push this complete project folder to a GitHub repository.
-2. Open https://share.streamlit.io/ and sign in with GitHub.
-3. Select **New app**, choose your repository and branch, and set the main file path to `app.py`.
-4. Deploy. The repository must include the saved `model/*.joblib` files and `dataset_metadata.json`.
-5. Test the live URL using `test_data.csv`, then add the live app URL here: **[PASTE YOUR STREAMLIT APP URL]**.
-
-## Assignment submission checklist
-- [ ] GitHub repository URL works and contains all source/model/data/dependency files.
-- [ ] Live Streamlit app URL opens and works.
-- [ ] App shows the five-model comparison and selected-model metrics/report.
-- [ ] Screenshot captured while executing the assignment on BITS Virtual Lab.
-- [ ] This README content and the two working links are included in the single PDF submission.
-
-**Important:** The assignment asks for a screenshot from BITS Virtual Lab. A local run or Streamlit Cloud deployment is not a substitute for that required screenshot. Also, make your own Git commits, review the code, and write your own observations; the assignment explicitly warns against direct copy-paste submissions.
